@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
-//new component
+import { MainFormComponent } from './main-form/main-form.component';
 
 const routes: Routes = [
   { path: 'about', component:AboutComponent},
-  //create a new path for navbar
+  { path: 'main-form', component:MainFormComponent},
 ];
 
 @NgModule({

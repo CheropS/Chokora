@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-main-form',
@@ -7,8 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainFormComponent implements OnInit {
 
-  constructor() { }
-
+  uname:any;
+  user:any;
+  repos:any;
+ getUsername(){
+    this.serviceservice.getUser(this.uname).subscribe(profile=>{
+      console.log(profile);
+      return this.user = profile;
+    });
+  }
+  getRepository(){
+    this.serviceservice.getRepos(this.uname).subscribe(data=>{
+      console.log(data)
+      return this.repos = data;
+    });
+  }
+  constructor(private serviceservice:ServiceService) { }
   ngOnInit(): void {
   }
 
