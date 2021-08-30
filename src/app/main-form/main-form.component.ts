@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ServiceService } from '../service.service';
+import { service } from '../service.service';
 
 @Component({
   selector: 'app-main-form',
@@ -23,7 +23,7 @@ export class MainFormComponent implements OnInit {
       return this.repos = data;
     });
   }
-  constructor(private serviceservice:ServiceService) { }
+  constructor(private serviceservice:service) { }
   ngOnInit(): void {
   }
 

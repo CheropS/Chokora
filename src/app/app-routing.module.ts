@@ -4,8 +4,8 @@ import { AboutComponent } from './about/about.component';
 import { MainFormComponent } from './main-form/main-form.component';
 
 const routes: Routes = [
+  { path: 'Username', component:MainFormComponent},
   { path: 'about', component:AboutComponent},
-  { path: 'main-form', component:MainFormComponent},
 ];
 
 @NgModule({

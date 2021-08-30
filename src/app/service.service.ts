@@ -5,7 +5,8 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class ServiceService {
+
+export class service {
   getUser(unamer:any){
     return this.Http.get("https://api.github.com/users/"+ unamer +"?access_token=" + environment.githubApi)
     .pipe(((response: any) => response));
