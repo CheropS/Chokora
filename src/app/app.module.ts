@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainFormComponent } from './main-form/main-form.component';
-
+import { AvatarModule } from 'ngx-avatar';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { MainFormComponent } from './main-form/main-form.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule, 
+    AvatarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
