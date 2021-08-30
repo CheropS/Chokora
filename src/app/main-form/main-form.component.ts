@@ -13,7 +13,7 @@ export class MainFormComponent implements OnInit {
   repos:any;
  getUsername(){
     this.serviceservice.getUser(this.uname).subscribe(profile=>{
-      console.log(profile);
+      console.log('data', profile);
       return this.user = profile;
     });
   }
