@@ -4,7 +4,7 @@
             <form #fInput="ngForm" id="frm" class="form-inline">
                 <input name='uname' type="search" id="gsearch" placeholder="input username"
                     class="form-control form-control-sm w-95" [(ngModel)]='uname' (keyup)='getUsername()'><br>
-                <input type="submit" value="Search" class="btn btn-success" (click)='getUsername()'
+                <input type="submit" value="Search" class="btn btn-primary" (click)='getUsername()'
                     (click)='getRepository()'>
                 <br>
             </form>
